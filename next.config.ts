@@ -4,12 +4,12 @@ const isDev = process.env.NODE_ENV !== 'production';
 
 const withPWAConfig = withPWA({
   dest: 'public',
-  disable: isDev,
+  disable: isDev, // disables PWA in dev mode
 });
 
 export default withPWAConfig({
   reactStrictMode: true,
   typescript: {
-    ignoreBuildErrors: false, // set true if you still get issues
+    ignoreBuildErrors: false, // change to true if build fails again
   },
 });
