@@ -1,5 +1,6 @@
 'use client';
 
+import { Analytics } from "@vercel/analytics/next"
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Trash2, Check, Sparkles, Calendar, Filter } from 'lucide-react';
